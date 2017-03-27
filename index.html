@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Timer and progressbar </title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.9/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="ui grid">
+        <div class="row">
+            <div class="sixteen wide column"></div>
+        </div>
+    </header>
+    <div class="ui grid row">
+        <div class="ui two column centered grid">
+            <!-- progressbar-->
+            <div class="row">
+                <div class="ui ten wide column centered">
+                    <div class="ui indicating progress" id="progressBar">
+                        <div class="bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <!-- error message -->
+                    <div class="ui ten wide column centered negative message hidden">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            Не корректное время!
+                        </div>
+                        <p>Задайте правильный формат. Максимальное значение 23:59:59
+                        </p>
+                    </div>
+                    <!-- end error message -->
+                </div>
+            </div>
+            <!--input time -->
+            <div class="column center hide">Введите время отсчета:</div>
+            <div class="six column centered row hide">
+                <div class="column">
+                    <div class="ui input">
+                        <input placeholder="Часы" type="text" id="hoursSet">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui input">
+                        <input placeholder="Минуты" type="text" id="minutesSet">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui input">
+                        <input placeholder="Секунды" type="text" id="secondsSet">
+                    </div>
+                </div>
+            </div>
+            <!--input time end  -->
+            <!-- buttons -->
+            <div class="sixteen column centered row">
+                <div class="ui shape">
+                    <div class="sides">
+                        <div class="side active">
+                            <div class="cotent">
+                                <div class="center">
+                                    <button id="start" class="ui right labeled icon button">
+                                        <i class="right play icon"></i> Start
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="side">
+                            <div class="content">
+                                <div class="center">
+                                    <button id="stop" class="ui left labeled icon button">
+                                        <i class="right stop icon"></i> Stop
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- time counter -->
+            <div class="row">
+                <div class="ui ten wide column centered center">
+                    <div class="ui red inverted statistic ">
+                        <div id="time" class="value hidden">
+                            <!-- 00:00:00:000 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: #3E4962;
+}
+.column.center.hide {
+    color: #ffffff;
+}
+.ui.grid.row {
+  margin-top: 170px;
+}
+.center {
+  text-align: center !important; 
+  
+}
+.pulse {
+  animation: pulse 0.9s cubic-bezier(0.30, 2.40, 0.85, 2.50) infinite;
+}
+
+.hideSetTime > div:nth-child(1),
+.hideSetTime > div:nth-child(2) {
+    display: none !important;
+}
+#progressBar {
+    display: none ;
+}
+
+.hidden {
+ display: none !important;
+}
