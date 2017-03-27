@@ -1,9 +1,7 @@
 body {
     background-color: #3E4962;
 }
-.column.center.hide {
-    color: #ffffff;
-}
+
 .ui.grid.row {
   margin-top: 170px;
 }
